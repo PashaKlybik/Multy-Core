@@ -13,6 +13,7 @@
 #include "multy_core/src/ethereum/ethereum_transaction_builder_multisig.h"
 #include "multy_core/src/ethereum/ethereum_transaction_builder_erc20.h"
 #include "multy_core/src/ethereum/ethereum_transaction_builder_erc721.h"
+#include "multy_core/src/ethereum/ethereum_transaction_builder_bloqboard.h"
 #include "multy_core/src/ethereum/ethereum_transaction_builder.h"
 
 #include "multy_core/src/exception.h"
@@ -99,6 +100,10 @@ TransactionBuilderPtr EthereumFacade::make_transaction_builder(
             ETHEREUM_TRANSACTION_BUILDER_ERC721,
             &make_ethereum_ERC721_transaction_builder
         },
+        {
+            ETHEREUM_TRANSACTION_BUILDER_BLOQBOARD,
+            &make_ethereum_bloqboard_transaction_builder
+        },
     };
 
     const auto builder = BUILDERS.find(type);
@@ -129,6 +134,7 @@ TransactionBuilderPtr EthereumFacade::make_transaction_builder_by_name(
             { ETHEREUM_TRANSACTION_BUILDER_MULTISIG, "multisig" },
             { ETHEREUM_TRANSACTION_BUILDER_BASIC, "basic" },
             { ETHEREUM_TRANSACTION_BUILDER_ERC721, "erc721" },
+            { ETHEREUM_TRANSACTION_BUILDER_BLOQBOARD, "bloqboard" },
         }
     };
 

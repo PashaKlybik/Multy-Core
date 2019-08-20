@@ -136,3 +136,5 @@ GTEST_TEST(EosTransactionTest, SmokeTest_testnet_2)
             ",\"packed_trx\":\"8690555b6535ffd893a9000000000100a6823403ea3055000000572d3ccdcd010000000000d3b0a900000000a8ed3232260000000000d3b0a900806"
             "9d85490b1ca102700000000000004454f5300000000056d756c747900\",\"compression\":\"none\",\"packed_context_free_data\":\"\"}"), std::string(signatures.get()));
 }
+
+

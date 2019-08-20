@@ -108,6 +108,7 @@ set(MULTY_CORE_SOURCES
     src/ethereum/ethereum_transaction_builder_multisig.cpp
     src/ethereum/ethereum_transaction_builder_erc20.cpp
     src/ethereum/ethereum_transaction_builder_erc721.cpp
+    src/ethereum/ethereum_transaction_builder_bloqboard.cpp
     src/ethereum/ethereum_stream.cpp
 )
 
