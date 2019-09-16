@@ -178,6 +178,41 @@ const JsonTransactionApiTestCase ETH_BLOQBOARD_TEST_CASES[] = {
         "7ecbfa989e9fde4acd6ac1f70fcf271db08f7a16a7707aea026620aa9da3e2cfa0d9a3048efce54e361e"
         "efa550012b955535971fcc9bbcefd")
     },
+
+    {
+        R"json({
+    "blockchain": "Ethereum",
+    "net_type": 42,
+    "account": {
+        "type": 0,
+        "private_key": "99eeac7292780321f3701545cf8e9538abf97ed9780b88c4fb06ec2dcd114f42"
+    },
+    "builder": {
+        "type": "erc20",
+        "action": "approve",
+        "payload": {
+            "balance_eth": "1000000000000000000",
+            "contract_address": "0xbf7a7169562078c96f0ec1a8afd6ae50f12e5a99",
+            "balance_token": "1000000000000000000",
+            "address_for_approve": "0x0a1e4d0b5c71b955c0a5993023fc48ba6e380496",
+            "approve_amount_token": "1000000000000000000"
+        }
+    },
+    "transaction": {
+        "nonce": 3,
+        "fee": {
+            "gas_price": "5100000000",
+            "gas_limit": "100000"
+        }
+    }
+})json",
+        // TX id: 0xce6e9491578b5984f85a4067808c7fefd5c75e802ca2353047f8d9021faefcbf
+        TX("0xf8a90385012ffbd300830186a094bf7a7169562078c96f0ec1a8afd6ae50f12e5a9980b844095ea"
+        "7b30000000000000000000000000a1e4d0b5c71b955c0a5993023fc48ba6e38049600000000000000000"
+        "00000000000000000000000000000000de0b6b3a764000078a021a0ce1fdb677b43d25afba412494309c"
+        "194daabbd7bc03e83efb74f8b9a43159f7cfaea60554f0ce9b96151b4cbbd49a4e761897dd285ca7c4e7"
+        "f6e2a54d539")
+    },
 };
 
 
